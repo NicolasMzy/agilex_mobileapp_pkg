@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="src/AgileX_.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agilex Controller</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="modules/vue.min.js"></script>
+        <script src="modules/roslib.min.js"></script>
+    </head>
+
+    <body>
+        
+        <!-- Header -->
+       
+        <header class="header">
+            
+            <div class="header-container">
+            
+                <a class="company"><p class="Agilex">AGILEX</p><p class="Robotics">ROBOTICS</p></a>
+
+                <nav class="nav-menu">
+                    
+                    <a href="index.html" class="home"><img src="src/home.png" id="home"></a>
+                    
+                    <!-- Multilanguage -->
+                    
+                    <div class="language">
+                        
+                        <div class="language-selected">
+                            English
+                        </div>
+                        <ul>
+                            <li><a href="#" class="en">English</a></li>
+                            <li><a href="#" class="it">Italian</a></li>
+                            <li><a href="#" class="fr">French</a></li>
+                            <li><a href="#" class="ch">Chinese</a></li>
+                        </ul>
+                    </div>  
+                </nav>
+            </div>
+        
+        </header>
+
+            
+        <!-- Connection -->
+        
+        <section class="connection">
+            
+            <main id="vueApp">
+                
+                <h1 id="connec">CONNECTION</h1>
+
+                <div class="address">    
+                    <input id="input"type="text" class="input" v-model="rosbridge_address" @click="resetButton">
+                    <img src="src/wifi_g.png">            
+                </div>
+                
+                <div class="power-button" @click="connect"><a class="power"></a></div>
+
+            </main>
+            
+        </section>
+
+        <!-- Transition -->
+
+        <div class="container">
+            <div class="transition">
+              <div class="cover cover1"></div>
+              <div class="cover cover2"></div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+
+        <div class="footer">
+            <img class="bottomAgilex" src="src/AgileX_.png">
+        </div>
+        
+        <!-- Scripts -->
+        
+        <script src="modules/jquery-3.6.1.min.js"></script>
+        
+        <script src="multilanguage/index.js"></script>
+        <script type="module" src="loaders/loader_index.js"></script>
+    </body>
+</html>

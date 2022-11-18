@@ -1,0 +1,8 @@
+<launch>
+ 
+  <include file="$(find scout_bringup)/launch/scout_minimal.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+    <arg name="port" value="9090"/>
+  </include>
+   <node pkg="agilex_mobileapp_pkg" type="python3.sh" name="python3" output="screen" />
+</launch>

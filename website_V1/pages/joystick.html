@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="../image/png" href="../src/AgileX_.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agilex Controller</title>
+        <link rel="stylesheet" href="../css/joystick.css">
+        <script src="../modules/roslib.min.js"></script>
+        <script src="../modules/vue.min.js"></script>
+    </head>
+
+    <body>
+        
+        <!-- Header -->
+        <header class="header">
+            
+            <div class="header-container">
+            
+                <a class="company"><p class="Agilex">AGILEX</p><p class="Robotics">ROBOTICS</p></a>
+
+                <nav class="nav-menu">
+                    
+                    <a href="../index.html" class="home"><img src="../src/home.png" id="home"></a>
+                    
+                    <!-- Multilanguage -->
+                    
+                    <div class="language">
+                        
+                        <div class="language-selected">
+                            English
+                        </div>
+                        <ul>
+                            <li><a href="#" class="en">English</a></li>
+                            <li><a href="#" class="it">Italian</a></li>
+                            <li><a href="#" class="fr">French</a></li>
+                            <li><a href="#" class="ch">Chinese</a></li>
+                        </ul>
+                    </div>  
+                </nav>
+            </div>
+        
+        </header>
+
+        <!-- Joystick Info-->
+
+        <section class="control-joystick">
+                
+            <h1 id="titleControl">Control the robot with the joystick !</h1>
+
+            <div class="info">
+                
+                <div class="gaugeSpeed">
+                    <div class="gaugeSpeed__body">
+                      <div class="gaugeSpeed__fill"></div>
+                      <div class="gaugeSpeed__cover"></div>
+                    </div>
+                </div>
+
+                <div class="gaugeAngle">
+                    <div class="gaugeAngle__body">
+                      <div class="gaugeAngle__fill"></div>
+                      <div class="gaugeAngle__cover"></div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+
+        <!-- Joystick -->
+       
+        <canvas id="canvas"></canvas> 
+        
+        <main id="vueApp">
+
+            <div class="buttons">
+                <button class="buttonStop" v-if="connected" @click="disconnect">stop !</button>
+                <button class="buttonStart" v-else @click="connect">start !</button>
+            </div>
+
+        </main>
+        
+        <!-- Transition -->
+        
+        <div class="container">
+            <div class="transition">
+                <div class="cover cover1"></div>
+                <div class="cover cover2"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <img class="bottomAgilex" src="../src/AgileX_.png">
+        </div>
+
+        <!-- Scripts -->
+        
+        <script src="../modules/jquery-3.6.1.min.js"></script>
+
+        <script type="module" src="joystick.js"></script>
+        <script src="../multilanguage/joystick.js"></script>
+        <script  src="../loaders/loader_joystick.js"></script>
+    </body>
+</html>

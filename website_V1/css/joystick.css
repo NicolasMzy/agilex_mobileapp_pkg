@@ -1,0 +1,419 @@
+@font-face {
+    font-family: Raleway ;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: "Raleway", black;
+    min-height: 100%;
+}
+
+html{
+    height: 100%;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+     -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==========================  HEADER  ================================= */
+
+
+.header {
+    background-color: #232323;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 5px 5px 10px 5px #888888;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.header-container{
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+
+#home {
+    height: 25px;
+}
+
+.Agilex {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.Robotics {
+    color: #7e0b0b;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu > a {
+    color: gray;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.nav-menu a:hover, p:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.language {
+    position: relative;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-image: url(../src/country/english.png);
+    background-position: center center;
+    background-size: 40px;
+    margin-right: 10px;
+    margin-left: 5px;
+
+}
+
+/* Language selection Jquery */
+.language-selected.change-fr:before {
+    background-image: url(../src/country/french.png);
+}
+
+.language-selected.change-it:before {
+    background-image: url(../src/country/italy.png);
+}
+
+.language-selected.change-ch:before {
+    background-image: url(../src/country/chinese.png);
+}
+
+.language-selected.change-en:before {
+    background-image: url(../src/country/english.png);
+}
+
+.language ul {
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.5);
+    border: 1px solid rgba(240, 248, 255, 0.5);
+    padding-top: 10px ;
+    padding-left: 3px;
+    display: none;
+}
+
+.language ul li {
+    list-style: none ;   
+}
+
+.language ul li a{
+    display: block;
+    color: #535353;
+    padding-top: 10px;
+}
+
+.language ul li a::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-position: center center;
+    margin-right: 20px;
+}
+
+a.it:before {
+    background-image: url(../src/country/italy.png);
+    background-size: 30px;
+}
+
+a.fr:before {
+    background-image: url(../src/country/french.png);
+    background-size: 30px;
+}
+
+a.ch:before {
+    background-image: url(../src/country/chinese.png);
+    background-size: 30px;
+}
+
+a.en:before {
+    background-image: url(../src/country/english.png);
+    background-size: 40px;
+}
+
+.language:hover ul {
+    display: block;
+}
+
+/*------------------------------- BODY PAGE --------------------------------*/
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gaugeAngle, .gaugeSpeed {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*------------------------------- Gauge Speed --------------------------------*/
+
+.gaugeSpeed {
+    width: 100px;
+    max-width: 250px;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    color: #004033;
+  }
+  
+  .gaugeSpeed__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #b4c0be;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+  }
+  
+  .gaugeSpeed__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: #910c0c;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .gaugeSpeed__cover {
+    width: 75%;
+    height: 150%;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    /* Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+/*------------------------------- Gauge Speed --------------------------------*/
+
+.gaugeAngle {
+    width: 100px;
+    max-width: 250px;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    color: #004033;
+  }
+  
+  .gaugeAngle__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background: #b4c0be;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+  }
+  
+  .gaugeAngle__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: #31385d;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .gaugeAngle__cover {
+    width: 75%;
+    height: 150%;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    /* Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+/*------------------------------- Joystick --------------------------------*/
+
+.control-joystick {
+    text-align: center;
+    padding-top: 60px 0;
+}
+
+.control-joystick h1 {
+    margin-top: 100px;
+}
+
+.joystick {
+    height: 100px;
+}
+
+/*------------------------------- Buttons --------------------------------*/
+ 
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonStart {
+    width: 180px;
+    height: 45px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    background-color: rgb(134, 28, 28);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    animation: pulse 2s infinite ;
+ 
+}
+
+.buttonStart:hover {
+    animation: none;
+}
+
+.buttonStop {
+    width: 180px;
+    height: 45px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    background-color: #C7C3C3;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+/*-------------------------------  FOOTER  --------------------------------- */
+
+.footer {
+    display: flex;
+    height: 21vh;
+}
+
+.bottomAgilex {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    height: 120px;
+}
+
+/*------------------------------- PAGE TRANSITION --------------------------------- */
+
+.cover {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: -100vw;
+    z-index: 1000;
+}
+.transition.slide .cover1 {
+    
+    background-color: rgb(146, 41, 34);
+    animation: slide 0.3s ease-in-out forwards;
+}
+.transition.slide .cover2 {
+    
+    background-color: rgb(255, 255, 255);
+    animation: slide 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slide {
+    
+    from {
+        left: 100vw;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(190, 81, 81, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(161, 97, 97, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(209, 87, 87, 0);
+	}
+}

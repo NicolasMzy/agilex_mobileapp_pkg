@@ -1,0 +1,351 @@
+@font-face {
+    font-family: Raleway ;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: "Raleway", black;
+    min-height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==========================  HEADER  ================================= */
+
+
+.header {
+    background-color: #232323;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 5px 5px 10px 5px #888888;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.header-container{
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+
+#home {
+    height: 25px;
+}
+
+.Agilex {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.Robotics {
+    color: #7e0b0b;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu > a {
+    color: gray;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.nav-menu a:hover, p:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.language {
+    position: relative;
+    width: 120px;
+    margin-left: 20px;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-image: url(../src/country/english.png);
+    background-position: center center;
+    background-size: 40px;
+    margin-right: 10px;
+    margin-left: 5px;
+
+}
+
+/* Language selection Jquery */
+.language-selected.change-fr:before {
+    background-image: url(../src/country/french.png);
+}
+
+.language-selected.change-it:before {
+    background-image: url(../src/country/italy.png);
+}
+
+.language-selected.change-ch:before {
+    background-image: url(../src/country/chinese.png);
+}
+
+.language-selected.change-en:before {
+    background-image: url(../src/country/english.png);
+}
+
+.language ul {
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.5);
+    border: 1px solid rgba(240, 248, 255, 0.5);
+    padding-top: 10px ;
+    padding-left: 3px;
+    display: none;
+}
+
+.language ul li {
+    list-style: none ;   
+}
+
+.language ul li a{
+    display: block;
+    color: #535353;
+    padding-top: 10px;
+}
+
+.language ul li a::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-position: center center;
+    margin-right: 20px;
+}
+
+a.it:before {
+    background-image: url(../src/country/italy.png);
+    background-size: 30px;
+}
+
+a.fr:before {
+    background-image: url(../src/country/french.png);
+    background-size: 30px;
+}
+
+a.ch:before {
+    background-image: url(../src/country/chinese.png);
+    background-size: 30px;
+}
+
+a.en:before {
+    background-image: url(../src/country/english.png);
+    background-size: 40px;
+}
+
+.language:hover ul {
+    display: block;
+}
+
+/*-------------------------------  BODY PAGE  --------------------------------- */
+
+
+/*--------------- TITLE ---------------- */
+
+.connection {
+    text-align: center;
+    padding-top: 60px 0;
+}
+
+.connection h1 {
+    margin-top: 100px;
+}
+
+/*--------------- TEXTBOX ---------------- */
+
+input {
+    background: rgb(0, 0, 0);
+    width: 70%;
+    max-width: 650px;
+    border-radius: 9999px;
+    padding: 15px;
+    /* This is important - keeps content from pushing on hover*/
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 1rem;
+    color: #8C9197;
+    transition: all .3s ease-in-out;
+    outline-offset: 0px;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+input::placeholder {
+color: #BEC2C6;
+}
+
+
+input:focus {
+    border: 2px solid #fd6a50bd;
+    box-shadow: 1px 1px 6px -1px #c02b20, -1px -1px 6px -1px #b8321a; 
+}
+
+.address{
+    
+    position: relative;
+    margin: 10px 0px;
+    margin-top: 50px;
+}
+
+.address img {
+    height: 18px;
+    position: absolute;
+    text-decoration: none;
+    color: #8C9197;
+    top: 50%;
+    margin-left: -35px;
+    transform: translateY(-50%);
+}
+
+/*--------------- BUTTON ---------------- */
+
+div.power-button{
+    cursor:pointer;
+    display: block;
+    width: 140px;
+    height: 140px;
+    font-size: 100px;
+    border: 2px solid #dedede;
+    background-color: #efefef;
+    box-shadow: 0px 0px 40px 1px #ddd inset,
+    0px 2px 4px rgba(0,0,0,0.4),
+    1px 1px 4px rgba(0,0,0,0.3),
+    -1px -1px 2px rgba(0,0,0,0.1),
+    -1px 1px 2px rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 140px;
+    
+    left: 0;
+    right: 0;
+    
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 50%;
+    transition: color 0.8s;
+    transition-timing-function: cubic-bezier(0, 1, 1, 1);
+}
+.power-button:hover{
+    box-shadow:  0px 2px 6px rgba(0,0,0,0.4),
+    1px 1px 6px rgba(0,0,0,0.3),
+    -1px -1px 4px rgba(0,0,0,0.1),
+    -1px 1px 4px rgba(0,0,0,0.1);
+}
+
+@keyframes error {
+	0%{ transform: translateX(-5px); }
+	25%{ transform: translateX(5px); }
+	50%{ transform: translateX(-5px); }
+	75%{ transform: translateX(5px); }
+	100%{ transform: translateX(0); }
+}
+
+.power.off{  
+    background-image: url(../src/power/Power_off.png);
+}
+
+.power-button.off {
+    animation: error 300ms ease;
+}
+
+.power.on{  
+    background-image: url(../src/power/Power_on.png);
+}
+
+.power {
+    background-image: url(../src/power/Power.png);
+}
+
+.power{
+    margin-top: 10px;
+    content: '';
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    background-image: url(../src/power/Power.png);
+    background-size: 120px;
+
+}
+
+
+/*-------------------------------  FOOTER  --------------------------------- */
+
+.footer {
+    display: flex;
+    height: 32vh;
+}
+
+.bottomAgilex {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    height: 120px;
+}
+
+/*------------------------------- PAGE TRANSITION --------------------------------- */
+
+.cover {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: -100vw;
+    z-index: 1000;
+}
+.transition.slide .cover1 {
+    
+    background-color: rgb(146, 41, 34);
+    animation: slide 0.3s ease-in-out forwards;
+}
+.transition.slide .cover2 {
+    
+    background-color: rgb(255, 255, 255);
+    animation: slide 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slide {
+    
+    from {
+        left: -100vw;
+    }
+    to {
+        left: 0;
+    }
+}
