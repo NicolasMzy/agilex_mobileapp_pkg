@@ -71,7 +71,7 @@ a {
 }
 
 .nav-menu > a {
-    color: gray;
+    color: rgb(56, 56, 56);
     font-size: 15px;
     padding: 10px;
 }
@@ -126,11 +126,14 @@ a {
 
 .language ul {
     position: absolute;
-    background-color: rgba(240, 248, 255, 0.5);
-    border: 1px solid rgba(240, 248, 255, 0.5);
+    background-color: rgba(69, 69, 69, 0.5);
+    border: 0px solid rgba(69, 69, 69, 0.5);
     padding-top: 10px ;
+    padding-right: 5px;
+    padding-bottom: 3px;
     padding-left: 3px;
     display: none;
+    border-radius: 5px;
 }
 
 .language ul li {
@@ -139,7 +142,7 @@ a {
 
 .language ul li a{
     display: block;
-    color: #535353;
+    color: #ffffff;
     padding-top: 10px;
 }
 
