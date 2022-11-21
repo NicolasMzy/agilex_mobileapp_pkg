@@ -8,8 +8,8 @@ function changeFR(){
   $(".language-selected").removeClass("change-en");
   $(".language-selected").addClass("change-fr");
   $("#titleControl").text("Controllez le robot avec le joystick !");
-  $(".speed").text("Vitesse :")
-  $(".angle").text("Angle :")
+  $(".gaugeSpeed__text").text("Vitesse")
+  $(".gaugeAngle__text").text("Angle")
 }
 
 function changeEN(){
@@ -19,8 +19,8 @@ function changeEN(){
         $(".language-selected").removeClass("change-it");
         $(".language-selected").addClass("change-en");
         $("#titleControl").text("Control the robot with the joystick !");
-        $(".speed").text("Speed :");
-        $(".angle").text("Angle :");
+        $(".gaugeSpeed__text").text("Speed");
+        $(".gaugeAngle__text").text("Angle");
 }
 
 function changeCH(){
@@ -30,8 +30,8 @@ function changeCH(){
   $(".language-selected").removeClass("change-en");
   $(".language-selected").addClass("change-ch");
   $("#titleControl").text("用操纵杆控制机器人!");
-  $(".speed").text("速度 :");
-  $(".angle").text("角度 :");
+  $(".gaugeSpeed__text").text("速度");
+  $(".gaugeAngle__text").text("角度");
 
 }
 
@@ -42,8 +42,8 @@ function changeIT(){
   $(".language-selected").removeClass("change-en");
   $(".language-selected").addClass("change-it");
   $("#titleControl").text("Controllate il robot con il joystick!");
-  $(".speed").text("velocità :");
-  $(".angle").text("Angolo :");
+  $(".gaugeSpeed__text").text("velocità");
+  $(".gaugeAngle__text").text("Angolo");
 }
 
 

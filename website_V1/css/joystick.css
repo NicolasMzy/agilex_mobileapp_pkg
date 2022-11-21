@@ -6,16 +6,16 @@
 body {
     font-family: "Raleway", black;
     min-height: 100%;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 html{
     height: 100%;
-    touch-action: none;
-    user-select: none;
-    -webkit-user-select: none;
-     -webkit-touch-callout: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 *{
