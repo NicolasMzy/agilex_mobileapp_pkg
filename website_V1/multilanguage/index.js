@@ -54,22 +54,22 @@ if(localStorage.getItem('language_selected' ) == 'it') {
   changeIT();
 }
 
-// Default Languages selectionned
-
+// change languages
 $(function() {
     $(".fr").click(function() {
 
       changeFR(); 
-      localStorage.setItem('language_selected','fr')
+      localStorage.setItem('language_selected','fr');
 
     });
   });
+
 
   $(function() {
     $(".en").click(function() {
 
       changeEN();
-        localStorage.setItem('language_selected','en')
+        localStorage.setItem('language_selected','en');
 
     });
   });
@@ -78,7 +78,7 @@ $(function() {
     $(".ch").click(function() {
 
       changeCH();
-        localStorage.setItem('language_selected','ch')
+        localStorage.setItem('language_selected','ch');
 
     });
   });
@@ -87,7 +87,7 @@ $(function() {
     $(".it").click(function() {
 
       changeIT();
-        localStorage.setItem('language_selected','it')
+        localStorage.setItem('language_selected','it');
 
     });
   });
