@@ -36,18 +36,17 @@ If the ROS dependencies are not yet installed, here is the link to set it up:
 ## CAN to USB
 
 - setup gs_usb:
-''sudo modprobe gs_usb ''
+``sudo modprobe gs_usb``
 
 - authorize the communication can:
-''sudo ip link set can0 up type can bitrate 500000 ''
+``sudo ip link set can0 up type can bitrate 500000``
 
 - to see if it's good:
-''
-sudo apt install can-utils
-candump can0
-''
 
-``telnet mapscii.me``
+``sudo apt install can-utils
+candump can0``
+
+
 
 
 
