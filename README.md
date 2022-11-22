@@ -57,7 +57,7 @@ $ candump can0
 ### ROSbride_server
 
 ```
-sudo apt-get install ros-<rosdistro>-rosbridge-server
+$ sudo apt-get install ros-<rosdistro>-rosbridge-server
 ```
 agx
 ### GET agilex_mobileapp_pkg
