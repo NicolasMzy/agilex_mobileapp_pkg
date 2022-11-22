@@ -45,8 +45,10 @@ If the ROS dependencies are not yet installed, here is the link to set it up:
 
 - to see if it's good:
 
-``sudo apt install can-utils
-candump can0``
+```
+sudo apt install can-utils
+candump can0
+```
 
 
 
