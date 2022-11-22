@@ -1,5 +1,4 @@
 const transition = document.querySelector(".transition");
-
 const home = document.querySelector(".home");
 
 home.addEventListener("click", (e) => {
@@ -10,4 +9,5 @@ home.addEventListener("click", (e) => {
       window.location = home.href;
     }, 600);
   
-  });
+});
+
