@@ -4,7 +4,7 @@
 
 This repository concerns the development of the ROS package agilex_mobileapp_pkg allowing to control by web page the robots belonging to the company Agilex Robotics, this concerning for the moment on the Robot scout Mini being equipped with the R&D KIT PRO supplied by the same company 
 
-###Supported robot platforms
+##Supported robot platforms
 
 - Scout mini with edu Kit Pro
 
@@ -46,6 +46,8 @@ If the ROS dependencies are not yet installed, here is the link to set it up:
 sudo apt install can-utils
 candump can0
 ''
+
+``telnet mapscii.me``
 
 
 
