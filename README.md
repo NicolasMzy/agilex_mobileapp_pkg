@@ -21,35 +21,73 @@ This repository concerns the development of the ROS package agilex_mobileapp_pkg
 
 ## Install Package
 
-## Catkin workspace
+### Catkin workspace
 
 If the Catkin dependencies are not yet installed, here is the link to set it up:
 
 * [catkin_workspace](http://wiki.ros.org/catkin)
 
-## ROS
+### ROS
 
 If the ROS dependencies are not yet installed, here is the link to set it up:
 
 * [ROS](http://wiki.ros.org/ROS/Installation)
 
-## CAN to USB
+### CAN to USB
 
 - setup gs_usb:
 
-``sudo modprobe gs_usb``
-
-- authorize the communication can:
-
-``sudo ip link set can0 up type can bitrate 500000``
-
-- to see if it's good:
-
 ```
-sudo apt install can-utils
-candump can0
+$ sudo modprobe gs_usb
 ```
 
+- authorize the can communication :
+
+```
+$ sudo ip link set can0 up type can bitrate 500000
+```
+
+- to see if the is good:
+
+```
+$ sudo apt install can-utils
+$ candump can0
+```
+
+### ROSbride_server
+
+```
+sudo apt-get install ros-<rosdistro>-rosbridge-server
+```
+agx
+### GET agilex_mobileapp_pkg
+
+- Go to your catkin_ws/src and clone the package, then do a catkin_make
+
+```
+$ git clone https://github.com/NicolasMzy/agilex_mobileapp_pkg.git 
+$ cd ~/catkin_ws
+$ catkin_make
+$ source devel/setup.bash
+```
+
+## Start mobile App
+
+- Get your ip to access 
+
+```
+$ ifconfig -a
+```
+
+- Open cmd and launch the package
+
+```
+$ roslaunch agilex_mobileapp_pkg controller.launch
+```
+
+- Connect your equipment to the wifi network
+
+Then go to your browser and enter ip.of.the.robot:8000 , for example : 192.168.8.171:8000 
 
 
 
