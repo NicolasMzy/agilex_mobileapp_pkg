@@ -188,14 +188,14 @@ let vueApp = new Vue({
                 this.x_real = Math.round(this.x - this.x_orig)*0.01
                 this.y_real = Math.round(this.y - this.y_orig)*0.01
 
-                if (this.x_real < 0.01 && this.x_real > -0.1) {
+                if (this.x_real < 0.01 && this.x_real > -0.01) {
                     this.x_relative = 0
                 }
                 else {
                     this.x_relative = this.x_real
                 }
 
-                if (this.y_real < 0.01 && this.y_real > -0.1) {
+                if (this.y_real < 0.01 && this.y_real > -0.01) {
                     this.y_relative = 0
                 }
                 else {
