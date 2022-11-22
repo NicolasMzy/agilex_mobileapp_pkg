@@ -59,7 +59,7 @@ $ candump can0
 ```
 $ sudo apt-get install ros-<rosdistro>-rosbridge-server
 ```
-agx
+
 ### GET agilex_mobileapp_pkg
 
 - Go to your catkin_ws/src and clone the package, then do a catkin_make
