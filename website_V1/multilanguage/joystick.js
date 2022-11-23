@@ -2,29 +2,31 @@
 // Variables of each languages
 
 function changeFR(){
-  $(".language-selected").text("French");
+  $(".language-selected").text("Français");
   $(".language-selected").removeClass("change-it");
   $(".language-selected").removeClass("change-ch");
   $(".language-selected").removeClass("change-en");
   $(".language-selected").addClass("change-fr");
   $("#titleControl").text("Controllez le robot avec le joystick !");
-  $(".gaugeSpeed__text").text("Vitesse")
-  $(".gaugeAngle__text").text("Angle")
+  $(".gaugeSpeed__text").text("Vitesse");
+  $(".gaugeAngle__text").text("Angle");
+
 }
 
 function changeEN(){
   $(".language-selected").text("English");
-        $(".language-selected").removeClass("change-fr");
-        $(".language-selected").removeClass("change-ch");
-        $(".language-selected").removeClass("change-it");
-        $(".language-selected").addClass("change-en");
-        $("#titleControl").text("Control the robot with the joystick !");
-        $(".gaugeSpeed__text").text("Speed");
-        $(".gaugeAngle__text").text("Angle");
+  $(".language-selected").removeClass("change-fr");
+  $(".language-selected").removeClass("change-ch");
+  $(".language-selected").removeClass("change-it");
+  $(".language-selected").addClass("change-en");
+  $("#titleControl").text("Control the robot with the joystick !");
+  $(".gaugeSpeed__text").text("Speed");
+  $(".gaugeAngle__text").text("Angle");
+        
 }
 
 function changeCH(){
-  $(".language-selected").text("Chinese");
+  $(".language-selected").text("中国");
   $(".language-selected").removeClass("change-fr");
   $(".language-selected").removeClass("change-it");
   $(".language-selected").removeClass("change-en");
@@ -32,11 +34,12 @@ function changeCH(){
   $("#titleControl").text("用操纵杆控制机器人!");
   $(".gaugeSpeed__text").text("速度");
   $(".gaugeAngle__text").text("角度");
+  
 
 }
 
 function changeIT(){
-  $(".language-selected").text("Italian");
+  $(".language-selected").text("Italiano");
   $(".language-selected").removeClass("change-fr");
   $(".language-selected").removeClass("change-ch");
   $(".language-selected").removeClass("change-en");

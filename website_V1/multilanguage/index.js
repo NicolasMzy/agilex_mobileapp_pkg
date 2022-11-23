@@ -1,39 +1,39 @@
 // Variables of each languages
 
 function changeFR(){
-  $(".language-selected").text("French");
+  $(".language-selected").text("Français");
   $(".language-selected").removeClass("change-it");
   $(".language-selected").removeClass("change-ch");
   $(".language-selected").removeClass("change-en");
   $(".language-selected").addClass("change-fr");
-  $("#connec").text("CONNECTION");
+   $("#connec").text("CONNECTION");
 }
 
 function changeEN(){
   $(".language-selected").text("English");
-        $(".language-selected").removeClass("change-fr");
-        $(".language-selected").removeClass("change-ch");
-        $(".language-selected").removeClass("change-it");
-        $(".language-selected").addClass("change-en");
-        $("#connec").text("CONNECT");
+  $(".language-selected").removeClass("change-fr");
+  $(".language-selected").removeClass("change-ch");
+  $(".language-selected").removeClass("change-it");
+  $(".language-selected").addClass("change-en");
+  $("#connec").text("CONNECT");
 }
 
 function changeCH(){
-  $(".language-selected").text("Chinese");
-        $(".language-selected").removeClass("change-fr");
-        $(".language-selected").removeClass("change-it");
-        $(".language-selected").removeClass("change-en");
-        $(".language-selected").addClass("change-ch");
-        $("#connec").text("连接");
+  $(".language-selected").text("中国");
+  $(".language-selected").removeClass("change-fr");
+  $(".language-selected").removeClass("change-it");
+  $(".language-selected").removeClass("change-en");
+  $(".language-selected").addClass("change-ch");
+  $("#connec").text("连接");
 }
 
 function changeIT(){
-  $(".language-selected").text("Italian");
-        $(".language-selected").removeClass("change-fr");
-        $(".language-selected").removeClass("change-ch");
-        $(".language-selected").removeClass("change-en");
-        $(".language-selected").addClass("change-it");
-        $("#connec").text("CONNESSIONE");
+  $(".language-selected").text("Italiano");
+  $(".language-selected").removeClass("change-fr");
+  $(".language-selected").removeClass("change-ch");
+  $(".language-selected").removeClass("change-en");
+  $(".language-selected").addClass("change-it");
+  $("#connec").text("CONNESSIONE");
 }
 
 // Default Languages selectionned
