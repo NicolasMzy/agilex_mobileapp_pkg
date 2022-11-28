@@ -54,7 +54,7 @@ $ sudo apt install can-utils
 $ candump can0
 ```
 
-### ROSbride_server
+### ROSbridge_server
 
 ```
 $ sudo apt-get install ros-<rosdistro>-rosbridge-server
