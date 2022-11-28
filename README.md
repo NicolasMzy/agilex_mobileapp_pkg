@@ -65,6 +65,7 @@ $ sudo apt-get install ros-<rosdistro>-rosbridge-server
 - Go to your catkin_ws/src and clone the package, then do a catkin_make
 
 ```
+$ cd ~/catkin_ws/src
 $ git clone https://github.com/NicolasMzy/agilex_mobileapp_pkg.git 
 $ cd ~/catkin_ws
 $ catkin_make
